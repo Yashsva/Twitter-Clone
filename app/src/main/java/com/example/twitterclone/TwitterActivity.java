@@ -38,7 +38,7 @@ public class TwitterActivity extends AppCompatActivity implements AdapterView.On
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_twitter);
 
-        listView=findViewById(R.id.listView);
+        listView=findViewById(R.id.listTweets);
         arrayList=new ArrayList();
         arrayAdapter=new ArrayAdapter(this,android.R.layout.simple_list_item_checked,arrayList);
         listView.setChoiceMode(AbsListView.CHOICE_MODE_MULTIPLE);
@@ -113,6 +113,12 @@ public class TwitterActivity extends AppCompatActivity implements AdapterView.On
             finish();
 
 
+
+        }
+        else if(item.getItemId()==R.id.tweetItem)
+        {
+            Intent intent=new Intent(this,PostTweet.class);
+            startActivity(intent);
 
         }
 

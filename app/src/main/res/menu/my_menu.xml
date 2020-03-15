@@ -3,9 +3,14 @@
     xmlns:app="http://schemas.android.com/apk/res-auto">
     <item
         android:id="@+id/logoutUserItem"
-        android:orderInCategory="100"
+        android:orderInCategory="99"
         app:showAsAction="always"
         android:title="Logout"/>
-
+    <item
+        android:id="@+id/tweetItem"
+        app:showAsAction="always"
+        android:icon="@drawable/icon_tweet"
+        android:orderInCategory="100"
+        android:title="btnTweet"/>
 
 </menu>
